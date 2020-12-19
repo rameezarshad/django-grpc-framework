@@ -1,0 +1,7 @@
+{% if write_headers %}from django_grpc_bus.handlers import BasicHandler
+
+
+handler = BasicHandler()
+{% endif %}
+{% for app in apps %}handler.register('{{ app.0 }}.services.{{ app.1 }}Service')
+{% endfor %}

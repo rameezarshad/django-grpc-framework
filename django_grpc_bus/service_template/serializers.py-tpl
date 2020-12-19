@@ -1,0 +1,15 @@
+from django_grpc_bus.serializers import ModelProtoSerializer
+
+from {{ app_name }} import models
+{% for model in models %}
+from {{ producer }}.grpc import {{ model.name }}_pb2
+{% endfor %}
+{% for model in models %}
+class {{ model.name }}Serializer(ModelProtoSerializer):
+
+    class Meta:
+        model = models.{{ model.name }}
+        proto_class = {{ model.name }}_pb2.{{ model.name }}Data
+
+{% endfor %}
+

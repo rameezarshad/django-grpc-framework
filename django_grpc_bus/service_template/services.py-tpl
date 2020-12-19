@@ -1,0 +1,11 @@
+from {{ app_name }} import serializers
+from {{ app_name }} import models
+
+from django_grpc_bus.generics import ModelService
+
+{% for model in models %}
+class {{ model.name }}Service(ModelService):
+    queryset = models.{{ model.name }}.objects.all()
+    serializer_class = serializers.{{ model.name }}Serializer
+
+{% endfor %}
