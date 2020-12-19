@@ -2,8 +2,10 @@ from setuptools import find_packages, setup
 
 setup(
     name='django-grpc-bus',
-    version=1.0,
+    version='1.0.1',
     description='Django rest gRPC framework',
+    long_description=open('README.md', 'r', encoding='utf-8').read(),
+    long_description_content_type='text/markdown',
     url='https://github.com/rameezarshad/django-grpc-framework',
     download_url='https://github.com/rameezarshad/django-grpc-framework/archive/main.zip',
     author='Rameez Arshad',
@@ -23,8 +25,7 @@ setup(
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
-        'Topic :: Software Development :: Framework',
-        'License :: OSI Approved :: GNU General Public License License',
+        'License :: OSI Approved :: Apache Software License',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
