@@ -1,8 +1,7 @@
 Django gRPC Framework
 =====================
 
-Django gRPC framework is a advanced toolkit for building gRPC services, inspired by
-https://github.com/fengsp/django-grpc-framework.
+Django gRPC framework is a advanced toolkit for building gRPC services.
 
 # Requirements
 
