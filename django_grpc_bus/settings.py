@@ -5,6 +5,9 @@ For example your project's `settings.py` file might look like this:
 MESSAGE_BUS = {
     'ROOT_HANDLERS_HOOK': 'path.to.handler',
     'SERVICE_META': os.path.join(BASE_DIR, 'service_meta.yaml'),
+    'PRODUCER_ROOT': os.path.join(settings.BASE_DIR, 'generated_grpc'),
+    'SERVICE_TEMPLATE': os.path.join(Path(__file__).resolve().parent, 'service_template'),
+    'HANDLER_TEMPLATE': os.path.join(Path(__file__).resolve().parent, 'handler_template'),
     'SERVLETS': {
         'service1': {
             'host': localhost,

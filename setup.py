@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 
 setup(
-    name='django_grpc_bus',
+    name='django-grpc-bus',
     version=1.0,
     description='Django rest gRPC framework',
     url='https://github.com/rameezarshad/django-grpc-framework',
