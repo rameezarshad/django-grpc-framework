@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='django-grpc-bus',
-    version='1.0.1',
+    version='1.0.2',
     description='Django rest gRPC framework',
     long_description=open('README.md', 'r', encoding='utf-8').read(),
     long_description_content_type='text/markdown',
