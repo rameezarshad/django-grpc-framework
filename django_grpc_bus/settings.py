@@ -9,15 +9,15 @@ MESSAGE_BUS = {
     'SERVICE_TEMPLATE': os.path.join(Path(__file__).resolve().parent, 'service_template'),
     'HANDLER_TEMPLATE': os.path.join(Path(__file__).resolve().parent, 'handler_template'),
     'SERVLETS': {
-        'service1': {
+        'server1': {
             'host': localhost,
             'port': 50051,
         },
-        'service2': {
+        'server2': {
             'host': localhost,
             'port': 50052,
         },
-        'service3': {
+        'server3': {
             'host': localhost,
             'port': 50053,
         },
